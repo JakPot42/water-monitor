@@ -66,7 +66,7 @@ DEMO_BRIEFS: dict[str, str] = {
     "COLO": (
         "The Colorado River Basin is in CRITICAL water stress driven by the sustained "
         "multi-decade overallocation of the river combined with 22 years of drought. "
-        "Lee's Ferry streamflow is at the 5th percentile — among the lowest recorded — "
+        "Lee's Ferry streamflow is at the 5th percentile -- among the lowest recorded -- "
         "while Lake Mead and Powell sit at just 25% combined storage capacity. "
         "With 98% of the basin in D0+ drought and 40% in exceptional D4 conditions, "
         "any further below-normal precipitation will accelerate the storage decline "
@@ -75,14 +75,14 @@ DEMO_BRIEFS: dict[str, str] = {
     "CAL": (
         "California is in HIGH water stress following a below-average water year. "
         "Sacramento River flow is at the 18th percentile, and Shasta Reservoir stands at "
-        "55% of capacity — well below normal for this point in the season. "
+        "55% of capacity -- well below normal for this point in the season. "
         "Persistent drought covers 80% of the state, with 40% in severe D2+ conditions. "
         "Urban and agricultural demand are elevated ahead of peak summer, and without "
         "above-normal fall precipitation, reservoir drawdowns will continue through winter."
     ),
     "SWUS": (
         "The Southwest is in CRITICAL water stress with near-record low streamflow on the "
-        "Gila River (3rd percentile) and 99% of the region in drought — 25% at the "
+        "Gila River (3rd percentile) and 99% of the region in drought -- 25% at the "
         "exceptional D4 level. Combined with no major reservoir buffer, the region has "
         "virtually no storage resilience against extended dry periods. "
         "Municipal systems dependent on groundwater are under increasing pressure as "
@@ -90,7 +90,7 @@ DEMO_BRIEFS: dict[str, str] = {
     ),
     "SPLNS": (
         "The Southern Plains are in ELEVATED water stress. Red River discharge is at the "
-        "35th percentile — below normal but not alarming — while moderate drought (D1+) "
+        "35th percentile -- below normal but not alarming -- while moderate drought (D1+) "
         "covers 25% of the region. Soil moisture deficits from the preceding dry months "
         "are limiting groundwater recharge. Stress is manageable but trending upward if "
         "summer heat persists without significant rainfall."
@@ -104,7 +104,7 @@ DEMO_BRIEFS: dict[str, str] = {
     ),
     "GLAKE": (
         "The Great Lakes region is in LOW water stress with streamflow at the 82nd "
-        "percentile — well above normal. Lake levels remain high, and only 2% of the "
+        "percentile -- well above normal. Lake levels remain high, and only 2% of the "
         "region shows any abnormal dryness. Water supply for municipal, industrial, and "
         "navigation users is not under pressure. This region represents one of the "
         "largest surface freshwater reservoirs in North America with strong current conditions."
@@ -118,7 +118,7 @@ DEMO_BRIEFS: dict[str, str] = {
         "ACF system could decline further heading into fall."
     ),
     "MISS": (
-        "The Mississippi Basin is in LOW water stress with flow at the 58th percentile — "
+        "The Mississippi Basin is in LOW water stress with flow at the 58th percentile -- "
         "near normal for this season. Drought affects only 20% of the basin at the D0 "
         "threshold. Navigation conditions on the main stem are normal. Agricultural "
         "water demand is moderate and well within available supply margins. "
