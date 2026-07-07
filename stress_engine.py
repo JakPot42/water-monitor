@@ -1,6 +1,9 @@
 """Deterministic water stress computation — no AI, no external calls."""
 from dataclasses import dataclass
-from config import STRESS_TIERS
+
+# score_to_tier moved to stress_core.py (Phase 6, Cluster 5 consistency pass) --
+# re-exported here so `from stress_engine import score_to_tier` keeps working.
+from stress_core import score_to_tier
 
 
 @dataclass
@@ -74,13 +77,6 @@ def compute_water_stress(supply_stress: float, drought_index: float) -> float:
     100 → record-low supply, exceptional drought across the region
     """
     return max(0.0, min(100.0, 0.5 * supply_stress + 0.5 * drought_index))
-
-
-def score_to_tier(score: float) -> str:
-    for tier, (lo, hi) in STRESS_TIERS.items():
-        if lo <= score < hi:
-            return tier
-    return "CRITICAL"
 
 
 def build_snapshot(

@@ -3,10 +3,12 @@ import os
 from pathlib import Path
 from dotenv import load_dotenv
 
+from demo_mode import is_demo_mode
+
 load_dotenv()
 
 ANTHROPIC_API_KEY: str = os.getenv("ANTHROPIC_API_KEY", "")
-DEMO_MODE: bool = os.getenv("DEMO_MODE", "True").lower() not in ("false", "0", "no")
+DEMO_MODE: bool = is_demo_mode()
 MODEL: str = os.getenv("WATER_MODEL", "claude-haiku-4-5-20251001")
 
 USGS_BASE = "https://waterservices.usgs.gov/nwis"
@@ -83,12 +85,8 @@ REGIONS: dict[str, dict] = {
     },
 }
 
-STRESS_TIERS: dict[str, tuple[float, float]] = {
-    "LOW":      (0.0,  25.0),
-    "ELEVATED": (25.0, 50.0),
-    "HIGH":     (50.0, 75.0),
-    "CRITICAL": (75.0, 100.1),
-}
+# STRESS_TIERS moved to stress_core.py (Phase 6, Cluster 5 consistency pass) --
+# was a byte-identical duplicate of gridpulse's own copy; see stress_core.py.
 
 # USDM drought severity multipliers (D0=1 through D4=5, normalized to 0-100 scale)
 DROUGHT_WEIGHTS: tuple[float, ...] = (1.0, 2.0, 3.0, 4.0, 5.0)
